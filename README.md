@@ -1,142 +1,186 @@
-# CGrep — SDR Radio Monitoring Suite
+<div align="center">
 
-A collection of Python and React applications for real-time FM radio monitoring, spectrum analysis, and tactical visualization using RTL-SDR hardware.
+# 📡 CGrep
 
----
+### Real-Time SDR Radio Monitoring & SIGINT-Style Analysis Suite
 
-## Overview
+*Capture. Demodulate. Visualize. Understand the spectrum.*
 
-This repository contains a full-stack SDR (Software Defined Radio) monitoring system:
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
+[![RTL-SDR](https://img.shields.io/badge/RTL--SDR-Hardware-red?style=for-the-badge)](https://osmocom.org/projects/rtl-sdr/wiki)
 
-- **Python backends** that interface with RTL-SDR dongles to stream IQ samples, perform DSP (FFT, WFM demodulation), and output audio.
-- **React frontend** that provides a 3D tactical dashboard with real-time spectrum visualization, geographic situational awareness, and SIGINT-style analytics.
-
----
-
-## Repository Structure
-
-| File / Directory | Description |
-|------------------|-------------|
-| `spectrum_core.py` | Full-featured FM Radio Monitoring GUI (SDR# style). PyQt6 + pyqtgraph. Streams IQ, computes FFT spectrum & waterfall, performs WFM demodulation, and outputs audio via `sounddevice`. |
-| `monitor.py` | Standalone spectrum monitor with click-to-tune, frequency entry, peak-hold, and mouse-wheel zoom. Auto-detects RTL-SDR or falls back to simulated RF. |
-| `dashboard.py` | Region SDR Radio Network demo. Uses `rtl_fm` via pipe for zero-latency audio and simulates known FM stations with metadata. |
-| `server.py` | FastAPI WebSocket server that streams simulated (or real) FFT data to the React dashboard at 30 FPS. Optional desktop window via `webview`. |
-| `calculate.py` | Shared DSP utilities (FFT, demodulation helpers) used by the GUI apps. |
-| `sweep20.py` | Frequency sweep utility for RTL-SDR. |
-| `wp.py` | Waypoint / signal logging utility. |
-| `generate_pdf.py` | Report generator for captured signals. |
-| `generate_mask.py` | Utility for generating geographic masks. |
-| `audiotest.py` | Audio pipeline test script. |
-| `test.py` | General test / validation script. |
-| `sdr-dashboard/` | React + Vite + Three.js tactical dashboard. |
+</div>
 
 ---
 
-## Python Applications
+## 🎯 What is CGrep?
 
-### Requirements
+**CGrep** is a full-stack Software-Defined Radio monitoring platform. It interfaces with **RTL-SDR** hardware to sweep FM & DAB+ bands, demodulate broadcast audio in real time, detect and log signals, and presents everything through a **3D tactical web dashboard** — complete with geographic situational awareness, passkey-protected multi-user access, an AI operator assistant, and automated WhatsApp alerts.
 
-- Python 3.10+
-- RTL-SDR dongle & drivers ([osmocom RTL-SDR](https://osmocom.org/projects/rtl-sdr/wiki))
+It is not a toy waterfall viewer — it's a distributed RF monitoring network with collectors, a central PostgreSQL backend, cloud backups, and a command-center UI.
 
-### Install Dependencies
+---
 
-```bash
-pip install numpy scipy pyqtgraph PyQt6 sounddevice pyrtlsdr
-# Optional: for the web server
-pip install fastapi uvicorn
+## ✨ Feature Highlights
+
+| | |
+|:-:|---|
+| 🎛️ | **SDR#-grade desktop GUI** — FFT spectrum, waterfall, click-to-tune, WFM demod, audio out (PyQt6 + pyqtgraph) |
+| 📶 | **FM + DAB+ monitoring** — ensemble scanning (11B/12A), RDS decoding, multi-receiver support |
+| 🗼 | **Remote collector network** — headless `sdr_collector.py` agents stream sweeps to a central server |
+| 🌐 | **3D tactical dashboard** — React Three Fiber scene, glassmorphism HUD, live spectrum at 30 FPS over WebSocket |
+| 🗺️ | **Geographic awareness** — region map overlay, population/coverage masks, peak-intensity terrain shader |
+| 🤖 | **AI operator assistant** — local Ollama-powered chat embedded in the dashboard (fully self-hosted) |
+| 🔐 | **Passwordless auth** — WebAuthn/passkeys, JWT sessions, RBAC roles & permissions |
+| 📲 | **WhatsApp alerts** — self-hosted OpenWA / Green API notifications for signal events |
+| ☁️ | **Cloud backups** — scheduled database exports to S3-compatible storage |
+| 📄 | **Report generator** — one-click PDF reports of captured signal activity |
+| 🌍 | **i18n** — full English / Azerbaijani UI translations |
+
+---
+
+## 🏗️ Architecture
+
+```
+        ┌──────────────┐   IQ samples   ┌───────────────────┐
+        │   RTL-SDR    │ ─────────────► │   DSP pipeline    │
+        │   Dongles    │                │  FFT · WFM · RDS  │
+        └──────────────┘                └─────────┬─────────┘
+                                                  │
+              ┌───────────────────────────────────┼────────────────────┐
+              │                                   │                    │
+              ▼                                   ▼                    ▼
+     ┌────────────────┐                 ┌──────────────────┐  ┌──────────────┐
+     │  Desktop GUIs  │                 │  FastAPI server  │  │ Collectors   │
+     │ PyQt6 + audio  │                 │  REST + WS :8000 │  │ (remote SDR) │
+     └────────────────┘                 └────────┬─────────┘  └──────┬───────┘
+                                                 │                   │
+                        ┌────────────┬───────────┼───────────────────┘
+                        ▼            ▼           ▼
+                 ┌───────────┐ ┌───────────┐ ┌────────────────────┐
+                 │ PostgreSQL│ │  Ollama   │ │ React dashboard    │
+                 │  signals  │ │  AI chat  │ │ 3D scene · ECharts │
+                 └───────────┘ └───────────┘ └────────────────────┘
 ```
 
-**Platform-specific RTL-SDR drivers:**
+---
 
-- **Linux:** `sudo apt install rtl-sdr`
-- **macOS:** `brew install librtlsdr`
-- **Windows:** Download from [osmocom.org](https://osmocom.org/projects/rtl-sdr/wiki) and add to `PATH`.
+## 🧰 Tech Stack
 
-### Running the Apps
+**Backend**
 
-```bash
-# Full GUI with spectrum + waterfall + audio
-python spectrum_core.py
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![PyQt6](https://img.shields.io/badge/PyQt6-41CD52?logo=qt&logoColor=white)
 
-# Lightweight spectrum monitor
-python monitor.py
+- `server.py` — FastAPI app: REST API, WebSocket streaming, WebAuthn auth, RBAC, chat, backups
+- `sdr_collector.py`, `dual_site_monitor.py`, `regional_monitor.py` — headless collector agents
+- `fm_dab_sweep.py`, `dab11b_monitor.py`, `dab12a_monitor.py` — FM + DAB+ band monitors
+- `spectrum_core.py`, `monitor.py`, `lookforwaterfall.py`, `dashboard.py` — PyQt6 desktop apps
 
-# Region radio network demo
-python dashboard.py
+**Frontend** (`sdr-dashboard/`)
 
-# WebSocket server for the React dashboard
-python server.py
-```
+![React](https://img.shields.io/badge/React_19-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-black?logo=threedotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_4-38B2AC?logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+
+- React Three Fiber + drei + postprocessing — 3D tactical scene, bloom, custom GLSL terrain shader
+- ECharts / Recharts — analytics panels & signal statistics
+- Tiptap — rich chat input; tsParticles, GSAP, Framer Motion — HUD effects
+- SimpleWebAuthn — passkey login; i18n EN/AZ
 
 ---
 
-## React Dashboard
+## 🚀 Quick Start
 
-A 3D tactical situational-awareness interface built with **React**, **Vite**, **Three.js**, and **React Three Fiber**. Features a glassmorphism UI, real-time spectrum panels, and geographic visualization centered on Region.
+### 1. Backend
 
-### Tech Stack
+```bash
+pip install numpy scipy pyqtgraph PyQt6 sounddevice pyrtlsdr \
+            fastapi uvicorn psycopg2-binary
 
-- React 19 + Vite
-- `@react-three/fiber` & `@react-three/drei` — 3D scene management
-- `@react-three/postprocessing` — Bloom, Vignette effects
-- Custom tactical design tokens (glassmorphism, glitch effects, mono/digit fonts)
+python server.py          # API + WebSocket  →  http://localhost:8000
+python spectrum_core.py   # desktop spectrum GUI (optional)
+```
 
-### Setup
+### 2. Dashboard
 
 ```bash
 cd sdr-dashboard
 npm install
-npm run dev
+npm run dev               # → http://localhost:5173
 ```
 
-The dev server starts on `http://localhost:5173` by default. Ensure `server.py` is running to feed live spectrum data over the `/ws/sdr` WebSocket.
+### 3. Collectors (optional, on remote SDR machines)
+
+```bash
+python sdr_collector.py   # streams sweeps to the central server
+```
+
+> ⚙️ All secrets/hosts are configured via environment variables or a local
+> `config.env` (intentionally not committed — fill in your own keys).
 
 ---
 
-## Architecture
+## 📁 Project Structure
 
 ```
-┌─────────────┐     IQ samples      ┌─────────────┐
-│  RTL-SDR    │ ──────────────────> │  SdrWorker  │
-│   Dongle    │                     │  (QThread)  │
-└─────────────┘                     └──────┬──────┘
-                                           │
-                    ┌──────────────────────┼──────────────────────┐
-                    │                      │                      │
-                    ▼                      ▼                      ▼
-              ┌─────────┐           ┌────────────┐          ┌───────────┐
-              │   FFT   │           │ WFM Demod  │          │  Waterfall│
-              │ (numpy) │           │ + Decimate │          │  (pyqtgr) │
-              └────┬────┘           └─────┬──────┘          └───────────┘
-                   │                        │
-                   ▼                        ▼
-            ┌──────────┐           ┌─────────────┐
-            │  GUI Plot  │           │ AudioWorker │ ──> sounddevice
-            │(pyqtgraph)│           │  (callback) │      OutputStream
-            └──────────┘           └─────────────┘
-                   │
-                   ▼ WebSocket
-            ┌──────────────┐
-            │ React Dashboard│
-            │  (3D / SIGINT) │
-            └──────────────┘
+CGrep-v3/
+├── server.py               # FastAPI backend — API, WS, auth, chat, backups
+├── spectrum_core.py        # PyQt6 spectrum + waterfall + audio GUI
+├── dashboard.py            # radio network demo (rtl_fm pipe audio)
+├── sdr_collector.py        # headless remote collector agent
+├── fm_dab_sweep.py         # FM + DAB+ band sweeper
+├── dab11b_monitor.py       # DAB ensemble monitor (11B)
+├── dab12a_monitor.py       # DAB ensemble monitor (12A)
+├── dual_site_monitor.py    # two-site FM/DAB monitor
+├── regional_monitor.py     # single-site regional monitor
+├── waterfall.py            # waterfall analysis
+├── generate_pdf.py         # signal report generator
+├── auth_router.py          # WebAuthn/JWT auth routes
+├── models.py               # DB models
+├── simulation.py           # simulated RF data for dev/demo
+├── sdr-dashboard/          # React 19 + Vite tactical dashboard
+├── essentials/             # launcher scripts & thresholds
+└── rpfft/                  # rtl-power-fftw (vendored, fast sweeps)
 ```
 
 ---
 
-## Key Features
+## 🖼️ Screenshots
 
-- **Real-time spectrum & waterfall** with Blackman-Harris windowed FFT
-- **Wide-FM demodulation** with resampling and audio playback
-- **Click-to-tune** on the spectrum display
-- **Peak-hold trace** and mouse-wheel zoom
-- **Auto RTL-SDR detection** with graceful fallback to simulated signals
-- **FastAPI WebSocket bridge** for browser-based dashboards
-- **3D tactical React UI** with bloom post-processing and glassmorphism
+> *Drop your captures into `docs/screenshots/` and link them here.*
+>
+> `![Dashboard](docs/screenshots/dashboard.png)`
 
 ---
 
-## License
+## 🗺️ Roadmap
 
-This project is provided as-is for educational and experimental radio monitoring purposes.
+- [ ] Multi-band presets (airband, ADS-B, POCSAG)
+- [ ] Per-signal recording & IQ capture on trigger
+- [ ] Grafana-style alerting rules
+- [ ] Docker compose deployment
+
+---
+
+## 📜 License
+
+Provided as-is for **educational and experimental** radio monitoring purposes.
+Be aware of your local regulations — receiving broadcast bands is fine in most
+jurisdictions; transmitting is not covered here (this project is RX-only).
+
+<div align="center">
+
+**Built for the airwaves** 📡
+
+</div>
