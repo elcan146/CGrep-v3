@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="logo.png" alt="CGrep logo" width="240">
+
 # 📡 CGrep
 
 ### Real-Time SDR Radio Monitoring & SIGINT-Style Analysis Suite
