@@ -12,6 +12,10 @@
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
 [![RTL-SDR](https://img.shields.io/badge/RTL--SDR-Hardware-red?style=for-the-badge)](https://osmocom.org/projects/rtl-sdr/wiki)
+[![nRSP-ST](https://img.shields.io/badge/SDRplay-nRSP--ST-blueviolet?style=for-the-badge)](https://www.sdrplay.com)
+[![RSP1B](https://img.shields.io/badge/SDRplay-RSP1B-blueviolet?style=for-the-badge)](https://www.sdrplay.com)
+[![MSI.SDR Pro](https://img.shields.io/badge/MSI.SDR-Pro-blueviolet?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-View--Only-orange?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -35,6 +39,7 @@ It is not a toy waterfall viewer — it's a distributed RF monitoring network wi
 | 🌐 | **3D tactical dashboard** — React Three Fiber scene, glassmorphism HUD, live spectrum at 30 FPS over WebSocket |
 | 🗺️ | **Geographic awareness** — region map overlay, population/coverage masks, peak-intensity terrain shader |
 | 🤖 | **AI operator assistant** — local Ollama-powered chat embedded in the dashboard (fully self-hosted) |
+| 🧠 | **ML threshold calibration** — unsupervised KDE + valley detection auto-tunes noise floor & signal thresholds per site |
 | 🔐 | **Passwordless auth** — WebAuthn/passkeys, JWT sessions, RBAC roles & permissions |
 | 📲 | **WhatsApp alerts** — self-hosted OpenWA / Green API notifications for signal events |
 | ☁️ | **Cloud backups** — scheduled database exports to S3-compatible storage |
@@ -156,11 +161,11 @@ CGrep-v3/
 
 ---
 
-## 🖼️ Screenshots
+## 🎬 Demo
 
-> *Drop your captures into `docs/screenshots/` and link them here.*
->
-> `![Dashboard](docs/screenshots/dashboard.png)`
+<video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="100%"></video>
+
+> ▶️ [Watch the demo](https://github.com/elcan146/CGrep-v3/blob/main/cgrep-demo.mp4) — live dashboard + spectrum monitoring in action
 
 ---
 
@@ -175,9 +180,13 @@ CGrep-v3/
 
 ## 📜 License
 
-Provided as-is for **educational and experimental** radio monitoring purposes.
-Be aware of your local regulations — receiving broadcast bands is fine in most
-jurisdictions; transmitting is not covered here (this project is RX-only).
+**Copyright © 2026 Elcan İsmayılov. All rights reserved.**
+
+This repository is provided for **view-only and educational purposes**.
+Use, reproduction, modification, distribution, or commercialization is
+prohibited without explicit written permission — see [LICENSE](LICENSE).
+
+*RX-only project — be aware of your local regulations.*
 
 <div align="center">
 
