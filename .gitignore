@@ -1,0 +1,38 @@
+apis.txt
+app.txt
+Logs/
+__pycache__/
+venv/Lib/
+# Virtual environment
+venv/
+venv_collector/
+.venv/
+env/
+dist/
+build/
+# Python caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled binaries and libraries
+*.exe
+*.dll
+
+# Logs and temporary data files
+*.log
+*.csv
+dritest.txt
+SDR_DRI_UI_Breakdown.pdf
+config.env
+config.env.*
+.global_invalidation_ts
+seed_users.py
+backups/
+backup/
+sdr_config.yml
+.env
+
+# OpenWA self-hosted WhatsApp gateway
+OpenWA/

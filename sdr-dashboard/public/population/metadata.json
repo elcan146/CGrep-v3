@@ -1,0 +1,340 @@
+{
+  "feature_count": 10178,
+  "geometry_types": {
+    "POLYGON": 5422,
+    "POINT": 4738,
+    "LINESTRING": 15,
+    "MULTIPOLYGON": 3
+  },
+  "bbox": [
+    44.8414909,
+    38.442465,
+    50.6126899,
+    41.8392532
+  ],
+  "columns": [
+    {
+      "name": "id",
+      "type": "VARCHAR",
+      "null_count": 0,
+      "null_percent": 0.0,
+      "distinct_count": 10178,
+      "top_values": []
+    },
+    {
+      "name": "name",
+      "type": "VARCHAR",
+      "null_count": 1022,
+      "null_percent": 10.04,
+      "distinct_count": 4656,
+      "top_values": []
+    },
+    {
+      "name": "name_en",
+      "type": "VARCHAR",
+      "null_count": 9466,
+      "null_percent": 93.0,
+      "distinct_count": 552,
+      "top_values": [
+        {
+          "value": "Ahmedli",
+          "count": 4
+        },
+        {
+          "value": "Aghdam",
+          "count": 4
+        },
+        {
+          "value": "Khojavend",
+          "count": 4
+        },
+        {
+          "value": "Tazakend",
+          "count": 4
+        },
+        {
+          "value": "Yenikend",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "name_az",
+      "type": "VARCHAR",
+      "null_count": 4748,
+      "null_percent": 46.65,
+      "distinct_count": 3639,
+      "top_values": []
+    },
+    {
+      "name": "name_az_Cyrl",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "place",
+      "type": "VARCHAR",
+      "null_count": 1887,
+      "null_percent": 18.54,
+      "distinct_count": 9,
+      "top_values": [
+        {
+          "value": "village",
+          "count": 4471
+        },
+        {
+          "value": "hamlet",
+          "count": 3419
+        },
+        {
+          "value": "town",
+          "count": 151
+        },
+        {
+          "value": "city_block",
+          "count": 62
+        },
+        {
+          "value": "city",
+          "count": 46
+        }
+      ]
+    },
+    {
+      "name": "landuse",
+      "type": "VARCHAR",
+      "null_count": 4519,
+      "null_percent": 44.4,
+      "distinct_count": 4,
+      "top_values": [
+        {
+          "value": "residential",
+          "count": 5654
+        },
+        {
+          "value": "construction",
+          "count": 3
+        },
+        {
+          "value": "brownfield",
+          "count": 1
+        },
+        {
+          "value": "industrial",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "population",
+      "type": "VARCHAR",
+      "null_count": 9550,
+      "null_percent": 93.83,
+      "distinct_count": 333,
+      "top_values": [
+        {
+          "value": "0",
+          "count": 126
+        },
+        {
+          "value": "5000",
+          "count": 6
+        },
+        {
+          "value": "3000",
+          "count": 5
+        },
+        {
+          "value": "15500",
+          "count": 4
+        },
+        {
+          "value": "7700",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "is_in",
+      "type": "VARCHAR",
+      "null_count": 10134,
+      "null_percent": 99.57,
+      "distinct_count": 22,
+      "top_values": [
+        {
+          "value": "Region",
+          "count": 10
+        },
+        {
+          "value": "G\u00f6y\u00e7ay / Az\u0259rbaycan",
+          "count": 4
+        },
+        {
+          "value": "Region, Beyl\u0259qan",
+          "count": 3
+        },
+        {
+          "value": "Region, L\u0259nk\u0259ran",
+          "count": 2
+        },
+        {
+          "value": "Site-1, Region",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "source",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm0_pcode",
+      "type": "VARCHAR",
+      "null_count": 0,
+      "null_percent": 0.0,
+      "distinct_count": 1,
+      "top_values": [
+        {
+          "value": "AZE",
+          "count": 10178
+        }
+      ]
+    },
+    {
+      "name": "adm0_name",
+      "type": "VARCHAR",
+      "null_count": 0,
+      "null_percent": 0.0,
+      "distinct_count": 1,
+      "top_values": [
+        {
+          "value": "Region",
+          "count": 10178
+        }
+      ]
+    },
+    {
+      "name": "adm1_pcode",
+      "type": "VARCHAR",
+      "null_count": 3,
+      "null_percent": 0.03,
+      "distinct_count": 74,
+      "top_values": [
+        {
+          "value": "AZ00000003",
+          "count": 859
+        },
+        {
+          "value": "AZ30200001",
+          "count": 396
+        },
+        {
+          "value": "AZ80300001",
+          "count": 330
+        },
+        {
+          "value": "AZ30300001",
+          "count": 320
+        },
+        {
+          "value": "AZ70300001",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "name": "adm1_name",
+      "type": "VARCHAR",
+      "null_count": 3,
+      "null_percent": 0.03,
+      "distinct_count": 74,
+      "top_values": [
+        {
+          "value": "Site-1",
+          "count": 859
+        },
+        {
+          "value": "Khachmaz",
+          "count": 396
+        },
+        {
+          "value": "Lerik",
+          "count": 330
+        },
+        {
+          "value": "Guba",
+          "count": 320
+        },
+        {
+          "value": "Khojavand",
+          "count": 288
+        }
+      ]
+    },
+    {
+      "name": "adm2_pcode",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm2_name",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm3_pcode",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm3_name",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm4_pcode",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "adm4_name",
+      "type": "VARCHAR",
+      "null_count": 10178,
+      "null_percent": 100.0,
+      "distinct_count": 0,
+      "top_values": []
+    },
+    {
+      "name": "name_latin",
+      "type": "VARCHAR",
+      "null_count": 1018,
+      "null_percent": 10.0,
+      "distinct_count": 4893,
+      "top_values": []
+    }
+  ],
+  "summary": "10,178 features. geometry types: 5,422 POLYGON, 4,738 POINT, 15 LINESTRING, 3 MULTIPOLYGON. 11 of 21 columns are >=50% null (name_en, name_az_Cyrl, population, is_in, source, adm2_pcode, adm2_name, adm3_pcode, adm3_name, adm4_pcode, adm4_name).",
+  "temporal": null
+}

@@ -1,0 +1,331 @@
+{
+  "site_1": {
+    "db_min": -90.0,
+    "db_max": -30.0,
+    "noise_floor": -90.0,
+    "signal_threshold": -90.0,
+    "strong_signal": -48.5,
+    "snr_threshold": 5.4,
+    "stats": {
+      "samples": 486457,
+      "avg_power": -86.6,
+      "median_power": -90.8,
+      "avg_snr": 6.4,
+      "median_snr": 2.4,
+      "p05": -93.9,
+      "p95": -64.6
+    },
+    "rtys": {
+      "BTQK": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -77.0,
+        "signal_threshold": -72.0,
+        "strong_signal": -31.9,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 46117,
+          "avg_power": -68.5,
+          "median_power": -68.6,
+          "avg_snr": 24.4,
+          "median_snr": 25.2,
+          "p05": -89.4,
+          "p95": -50.0
+        }
+      },
+      "Yergüc": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -70.5,
+        "snr_threshold": 5.5,
+        "stats": {
+          "samples": 18878,
+          "avg_power": -90.8,
+          "median_power": -91.9,
+          "avg_snr": 2.1,
+          "median_snr": 1.4,
+          "p05": -94.0,
+          "p95": -82.2
+        }
+      },
+      "Gilgilçay": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -75.8,
+        "snr_threshold": 5.4,
+        "stats": {
+          "samples": 16777,
+          "avg_power": -91.2,
+          "median_power": -92.1,
+          "avg_snr": 1.6,
+          "median_snr": 1.2,
+          "p05": -93.8,
+          "p95": -86.5
+        }
+      },
+      "Lerik": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -71.1,
+        "snr_threshold": 5.6,
+        "stats": {
+          "samples": 31448,
+          "avg_power": -90.6,
+          "median_power": -91.4,
+          "avg_snr": 2.4,
+          "median_snr": 2.0,
+          "p05": -93.7,
+          "p95": -83.8
+        }
+      },
+      "Xızı": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -69.5,
+        "snr_threshold": 6.9,
+        "stats": {
+          "samples": 4194,
+          "avg_power": -89.2,
+          "median_power": -89.5,
+          "avg_snr": 3.6,
+          "median_snr": 3.7,
+          "p05": -92.4,
+          "p95": -81.2
+        }
+      }
+    }
+  },
+  "site_2": {
+    "db_min": -90.0,
+    "db_max": -30.0,
+    "noise_floor": -89.0,
+    "signal_threshold": -86.5,
+    "strong_signal": -52.0,
+    "snr_threshold": 5.5,
+    "stats": {
+      "samples": 318652,
+      "avg_power": -81.6,
+      "median_power": -83.0,
+      "avg_snr": 5.3,
+      "median_snr": 2.7,
+      "p05": -91.7,
+      "p95": -66.0
+    },
+    "rtys": {
+      "BTQK": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -82.6,
+        "signal_threshold": -77.6,
+        "strong_signal": -41.9,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 29297,
+          "avg_power": -68.0,
+          "median_power": -67.5,
+          "avg_snr": 19.7,
+          "median_snr": 21.4,
+          "p05": -85.4,
+          "p95": -54.2
+        }
+      },
+      "Yergüc": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -88.3,
+        "signal_threshold": -86.5,
+        "strong_signal": -65.6,
+        "snr_threshold": 5.5,
+        "stats": {
+          "samples": 12276,
+          "avg_power": -82.9,
+          "median_power": -83.0,
+          "avg_snr": 2.7,
+          "median_snr": 2.1,
+          "p05": -91.7,
+          "p95": -76.1
+        }
+      },
+      "Lerik": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -89.7,
+        "strong_signal": -64.1,
+        "snr_threshold": 5.2,
+        "stats": {
+          "samples": 20140,
+          "avg_power": -85.4,
+          "median_power": -86.2,
+          "avg_snr": 1.8,
+          "median_snr": 1.0,
+          "p05": -93.7,
+          "p95": -75.8
+        }
+      },
+      "Xızı": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -65.5,
+        "snr_threshold": 5.5,
+        "stats": {
+          "samples": 2628,
+          "avg_power": -85.5,
+          "median_power": -86.6,
+          "avg_snr": 2.5,
+          "median_snr": 1.4,
+          "p05": -94.0,
+          "p95": -75.8
+        }
+      },
+      "Gilgilçay": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -85.9,
+        "signal_threshold": -85.6,
+        "strong_signal": -65.8,
+        "snr_threshold": 5.6,
+        "stats": {
+          "samples": 10480,
+          "avg_power": -82.2,
+          "median_power": -82.0,
+          "avg_snr": 2.2,
+          "median_snr": 1.7,
+          "p05": -86.9,
+          "p95": -76.2
+        }
+      }
+    }
+  },
+  "site_4": {
+    "db_min": -90.0,
+    "db_max": -30.0,
+    "noise_floor": -78.0,
+    "signal_threshold": -74.0,
+    "strong_signal": -45.9,
+    "snr_threshold": 4.6,
+    "stats": {
+      "samples": 123019,
+      "avg_power": -70.4,
+      "median_power": -70.5,
+      "avg_snr": 3.9,
+      "median_snr": 1.8,
+      "p05": -79.5,
+      "p95": -59.7
+    },
+    "rtys": {
+      "Poylu": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -79.2,
+        "signal_threshold": -74.8,
+        "strong_signal": -52.7,
+        "snr_threshold": 4.2,
+        "stats": {
+          "samples": 6378,
+          "avg_power": -72.1,
+          "median_power": -71.3,
+          "avg_snr": 2.7,
+          "median_snr": 1.1,
+          "p05": -80.7,
+          "p95": -63.0
+        }
+      },
+      "Təpəcənnət": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -75.9,
+        "signal_threshold": -72.9,
+        "strong_signal": -49.9,
+        "snr_threshold": 6.1,
+        "stats": {
+          "samples": 6368,
+          "avg_power": -69.7,
+          "median_power": -69.4,
+          "avg_snr": 3.4,
+          "median_snr": 2.5,
+          "p05": -76.9,
+          "p95": -60.5
+        }
+      },
+      "Gülüstan": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -78.4,
+        "signal_threshold": -73.6,
+        "strong_signal": -53.7,
+        "snr_threshold": 4.6,
+        "stats": {
+          "samples": 6896,
+          "avg_power": -70.9,
+          "median_power": -70.1,
+          "avg_snr": 2.1,
+          "median_snr": 1.5,
+          "p05": -79.3,
+          "p95": -64.4
+        }
+      },
+      "Daşkəsən": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -66.7,
+        "signal_threshold": -65.5,
+        "strong_signal": -39.1,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 8481,
+          "avg_power": -59.5,
+          "median_power": -59.3,
+          "avg_snr": 13.5,
+          "median_snr": 13.0,
+          "p05": -68.8,
+          "p95": -49.9
+        }
+      },
+      "Gəncə": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -71.4,
+        "signal_threshold": -66.7,
+        "strong_signal": -40.3,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 1059,
+          "avg_power": -61.9,
+          "median_power": -66.5,
+          "avg_snr": 8.5,
+          "median_snr": 12.8,
+          "p05": -70.6,
+          "p95": -51.2
+        }
+      },
+      "İvanovka": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -73.3,
+        "signal_threshold": -76.4,
+        "strong_signal": -62.1,
+        "snr_threshold": 6.4,
+        "stats": {
+          "samples": 528,
+          "avg_power": -72.9,
+          "median_power": -73.0,
+          "avg_snr": 1.9,
+          "median_snr": 1.8,
+          "p05": -73.4,
+          "p95": -72.3
+        }
+      }
+    }
+  }
+}

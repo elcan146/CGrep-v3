@@ -1,0 +1,72 @@
+iso3: AZE
+category:
+  name: populated_places
+  formats:
+  - gpkg
+  - shp
+  - geojson
+  - kml
+  skip_pcodes: false
+  boundary_resolution: null
+  hdx:
+    title: Populated Places
+    notes: 'Settlements and residential areas: named cities, towns, villages, suburbs,
+      and residential land (`place=*` and `landuse=residential`). Useful for demographic
+      context, settlement-level targeting, and population analysis.
+
+
+      Coverage reflects where volunteer mappers have been active. Urban areas are
+      usually well represented, remote areas may be sparse. Cross-check critical decisions
+      with local field knowledge.
+
+
+      - Source: [OpenStreetMap](https://www.openstreetmap.org), a free, collaborative
+      world map
+
+      - Tags: [place](https://wiki.openstreetmap.org/wiki/Key:place), [landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)
+
+      - Part of the [exports grid on HDX](https://data.humdata.org/organization/hot/)
+      by [HOT](https://www.hotosm.org/)
+
+      '
+    tags:
+    - geodata
+    - populated places-settlements
+    license: hdx-odc-odbl
+    license_url: https://opendatacommons.org/licenses/odbl/1-0/
+    caveats: OpenStreetMap data is crowd sourced and cannot be considered to be exhaustive
+    dataset_source: OpenStreetMap contributors
+  overture:
+    enabled: false
+    theme: ''
+    feature_type: ''
+    select: []
+    where: []
+  osm:
+    enabled: true
+    select:
+    - feature_id AS id
+    - tags['name'] AS name
+    - tags['name:en'] AS name_en
+    - tags['place'] AS place
+    - tags['landuse'] AS landuse
+    - tags['population'] AS population
+    - tags['is_in'] AS is_in
+    - tags['source'] AS source
+    where: []
+    filter:
+      place:
+      - isolated_dwelling
+      - town
+      - village
+      - hamlet
+      - city
+      landuse:
+      - residential
+  transliterate:
+  - target: name_latin
+    source: name
+    prefer: name_en
+  temporal:
+    column: update_time
+source: osm

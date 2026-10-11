@@ -1,0 +1,49 @@
+[project]
+name = "pysdrplay"
+version = "0.1.0"
+description = "Python wrapper for SDRplay software-defined radio hardware"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Chris Goff" }
+]
+keywords = ["sdr", "sdrplay", "radio", "fm", "software-defined-radio"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Ham Radio",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+demo = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "sounddevice>=0.4.6",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+fm-radio = "fm_radio:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]

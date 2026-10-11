@@ -1,0 +1,210 @@
+{
+  "site_1": {
+    "db_min": -90.0,
+    "db_max": -30.0,
+    "noise_floor": -90.0,
+    "signal_threshold": -89.6,
+    "strong_signal": -43.6,
+    "snr_threshold": 5.8,
+    "stats": {
+      "samples": 119341,
+      "avg_power": -81.9,
+      "median_power": -86.1,
+      "avg_snr": 5.7,
+      "median_snr": 3.3,
+      "p05": -93.7,
+      "p95": -56.5
+    },
+    "rtys": {
+      "Lerik": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -70.7,
+        "snr_threshold": 5.9,
+        "stats": {
+          "samples": 7716,
+          "avg_power": -87.2,
+          "median_power": -87.2,
+          "avg_snr": 2.8,
+          "median_snr": 2.3,
+          "p05": -93.4,
+          "p95": -81.5
+        }
+      },
+      "Yergüc": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -67.9,
+        "snr_threshold": 5.8,
+        "stats": {
+          "samples": 4632,
+          "avg_power": -86.6,
+          "median_power": -86.7,
+          "avg_snr": 3.2,
+          "median_snr": 2.3,
+          "p05": -93.7,
+          "p95": -79.2
+        }
+      },
+      "BTQK": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -76.8,
+        "signal_threshold": -71.8,
+        "strong_signal": -30.7,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 10800,
+          "avg_power": -60.0,
+          "median_power": -56.9,
+          "avg_snr": 20.1,
+          "median_snr": 20.4,
+          "p05": -84.3,
+          "p95": -41.7
+        }
+      },
+      "Xızı": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -69.7,
+        "snr_threshold": 6.2,
+        "stats": {
+          "samples": 1029,
+          "avg_power": -86.1,
+          "median_power": -87.3,
+          "avg_snr": 3.7,
+          "median_snr": 3.3,
+          "p05": -93.5,
+          "p95": -79.8
+        }
+      },
+      "Gilgilçay": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -75.4,
+        "snr_threshold": 5.6,
+        "stats": {
+          "samples": 4113,
+          "avg_power": -88.8,
+          "median_power": -88.1,
+          "avg_snr": 2.0,
+          "median_snr": 2.1,
+          "p05": -93.7,
+          "p95": -85.8
+        }
+      }
+    }
+  },
+  "site_2": {
+    "db_min": -90.0,
+    "db_max": -30.0,
+    "noise_floor": -90.0,
+    "signal_threshold": -86.2,
+    "strong_signal": -52.4,
+    "snr_threshold": 5.4,
+    "stats": {
+      "samples": 102637,
+      "avg_power": -81.9,
+      "median_power": -82.7,
+      "avg_snr": 4.2,
+      "median_snr": 2.3,
+      "p05": -93.0,
+      "p95": -66.6
+    },
+    "rtys": {
+      "Lerik": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -89.2,
+        "strong_signal": -65.6,
+        "snr_threshold": 5.6,
+        "stats": {
+          "samples": 6636,
+          "avg_power": -86.1,
+          "median_power": -85.7,
+          "avg_snr": 2.4,
+          "median_snr": 1.4,
+          "p05": -94.0,
+          "p95": -78.8
+        }
+      },
+      "Yergüc": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -87.4,
+        "strong_signal": -64.6,
+        "snr_threshold": 5.7,
+        "stats": {
+          "samples": 3984,
+          "avg_power": -83.9,
+          "median_power": -83.9,
+          "avg_snr": 2.4,
+          "median_snr": 2.2,
+          "p05": -92.8,
+          "p95": -75.6
+        }
+      },
+      "BTQK": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -79.3,
+        "signal_threshold": -74.3,
+        "strong_signal": -42.2,
+        "snr_threshold": 10.0,
+        "stats": {
+          "samples": 9288,
+          "avg_power": -68.2,
+          "median_power": -68.0,
+          "avg_snr": 17.5,
+          "median_snr": 18.4,
+          "p05": -81.8,
+          "p95": -55.5
+        }
+      },
+      "Xızı": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -90.0,
+        "signal_threshold": -90.0,
+        "strong_signal": -65.5,
+        "snr_threshold": 5.8,
+        "stats": {
+          "samples": 885,
+          "avg_power": -86.6,
+          "median_power": -87.2,
+          "avg_snr": 2.4,
+          "median_snr": 1.4,
+          "p05": -94.5,
+          "p95": -76.6
+        }
+      },
+      "Gilgilçay": {
+        "db_min": -90.0,
+        "db_max": -30.0,
+        "noise_floor": -88.4,
+        "signal_threshold": -84.9,
+        "strong_signal": -62.5,
+        "snr_threshold": 5.8,
+        "stats": {
+          "samples": 3537,
+          "avg_power": -81.6,
+          "median_power": -81.4,
+          "avg_snr": 2.5,
+          "median_snr": 1.8,
+          "p05": -90.8,
+          "p95": -73.2
+        }
+      }
+    }
+  }
+}
