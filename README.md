@@ -163,22 +163,18 @@ CGrep-v3/
 
 ---
 
-## 🎬 Demo
+## Demo
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>🖥️ Live Dashboard</b></td>
-      <td align="center"><b>📡 Monitoring in Action</b></td>
+      <td align="center"><b>Dashboard</b></td>
     </tr>
     <tr>
-      <td><video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="440"></video></td>
       <td><video src="https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5" controls muted width="440"></video></td>
     </tr>
   </table>
 </div>
-
-> ▶️ Watch full-size: [dashboard demo](https://github.com/elcan146/CGrep-v3/blob/main/cgrep-demo.mp4)
 
 ---
 
