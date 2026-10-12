@@ -165,10 +165,6 @@ CGrep-v3/
 
 ## Demo
 
-<!-- TO ADD THE MOBILE VIDEO: click the Edit button on this file on GitHub, place your cursor
-     inside the src="" below (deleting the placeholder text), then drag & drop the mobile .mp4
-     into the editor - GitHub inserts the video URL right where your cursor is. -->
-
 <div align="center">
   <table>
     <tr>
@@ -177,11 +173,7 @@ CGrep-v3/
     </tr>
     <tr>
       <td><video src="https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5" controls muted width="440"></video></td>
-      <td><video src="
-
-https://github.com/user-attachments/assets/f73d4b85-037f-4d14-a9c1-056a3653762f
-
-" controls muted width="220"></video></td>
+      <td><video src="https://github.com/user-attachments/assets/f73d4b85-037f-4d14-a9c1-056a3653762f" controls muted width="220"></video></td>
     </tr>
   </table>
 </div>
