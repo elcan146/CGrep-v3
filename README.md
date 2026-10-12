@@ -177,7 +177,11 @@ CGrep-v3/
     </tr>
     <tr>
       <td><video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="440"></video></td>
-      <td><video src="DROP_cekigrep.mp4_HERE" poster="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.jpg" controls muted width="440"></video></td>
+      <td><video src="
+
+https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5
+
+" poster="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.jpg" controls muted width="440"></video></td>
     </tr>
   </table>
 </div>
