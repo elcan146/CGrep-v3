@@ -165,10 +165,6 @@ CGrep-v3/
 
 ## 🎬 Demo
 
-<!-- TO ADD VIDEO: click the ✏️ Edit button on this file on GitHub, place your cursor inside
-     the src="" below (deleting the placeholder text), then drag & drop cekigrep.mp4 into
-     the editor — GitHub inserts the video URL right where your cursor is. -->
-
 <div align="center">
   <table>
     <tr>
@@ -177,11 +173,7 @@ CGrep-v3/
     </tr>
     <tr>
       <td><video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="440"></video></td>
-      <td><video src="
-
-https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5
-
-" poster="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.jpg" controls muted width="440"></video></td>
+      <td><video src="https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5" poster="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.jpg" controls muted width="440"></video></td>
     </tr>
   </table>
 </div>
