@@ -2,7 +2,7 @@
 
 <img src="logo.png" alt="CGrep logo" width="240">
 
-# 📡 CGrep
+# CGrep
 
 ### Real-Time SDR Radio Monitoring & SIGINT-Style Analysis Suite
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 🎯 What is CGrep?
+## What is CGrep?
 
 **CGrep** is a full-stack Software-Defined Radio monitoring platform. It interfaces with **RTL-SDR** hardware to sweep FM & DAB+ bands, demodulate broadcast audio in real time, detect and log signals, and presents everything through a **3D tactical web dashboard** — complete with geographic situational awareness, passkey-protected multi-user access, an AI operator assistant, and automated WhatsApp alerts.
 
@@ -31,7 +31,7 @@ It is not a toy waterfall viewer — it's a distributed RF monitoring network wi
 
 ---
 
-## ✨ Feature Highlights
+##  Feature Highlights
 
 | | |
 |:-:|---|
