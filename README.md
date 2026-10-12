@@ -165,13 +165,19 @@ CGrep-v3/
 
 ## Demo
 
+<!-- TO ADD THE MOBILE VIDEO: click the Edit button on this file on GitHub, place your cursor
+     inside the src="" below (deleting the placeholder text), then drag & drop the mobile .mp4
+     into the editor - GitHub inserts the video URL right where your cursor is. -->
+
 <div align="center">
   <table>
     <tr>
       <td align="center"><b>Dashboard</b></td>
+      <td align="center"><b>Mobile</b></td>
     </tr>
     <tr>
       <td><video src="https://github.com/user-attachments/assets/69ecd77a-acfd-4d07-9f7e-7b84c19701d5" controls muted width="440"></video></td>
+      <td><video src="DROP_mobile.mp4_HERE" controls muted width="220"></video></td>
     </tr>
   </table>
 </div>
