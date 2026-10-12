@@ -165,9 +165,20 @@ CGrep-v3/
 
 ## 🎬 Demo
 
-<video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="100%"></video>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>🖥️ Live Dashboard</b></td>
+      <td align="center"><b>📡 Monitoring in Action</b></td>
+    </tr>
+    <tr>
+      <td><video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cgrep-demo.mp4" controls muted width="440"></video></td>
+      <td><video src="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.mp4" poster="https://raw.githubusercontent.com/elcan146/CGrep-v3/main/cekigrep.jpg" controls muted width="440"></video></td>
+    </tr>
+  </table>
+</div>
 
-> ▶️ [Watch the demo](https://github.com/elcan146/CGrep-v3/blob/main/cgrep-demo.mp4) — live dashboard + spectrum monitoring in action
+> ▶️ Watch full-size: [dashboard demo](https://github.com/elcan146/CGrep-v3/blob/main/cgrep-demo.mp4) · [monitoring clip](https://github.com/elcan146/CGrep-v3/blob/main/cekigrep.mp4)
 
 ---
 
